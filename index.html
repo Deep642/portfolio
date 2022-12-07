@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website by Dipayan</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cffb9bf6d8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- Header -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/d (2).png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <br>
+                <br>
+                <p>Hi, Thanks for visiting my portfolio <i class="fa-regular fa-face-smile-beam" ></i></p>
+                <br>
+                <h1>I'm <span>Dipayan Mandal</span>, <br>from India</h1>
+            </div>
+        </div>
+    </div>
+    
+<!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about_col_1">
+                    <img src="images/Your paragraph text.png" alt="">
+                </div>
+                <div class="about_col_2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I am Dipayan, a student of Computer Science & Engineering. Currently I am in 3rd year and persuing the degree at IEM Kolkata.I am interested in programming. 
+                        I prefer to do competetive programming in c++ & python mainly. 
+                        I have also basic idea about JAVA. I have huge interest in Web-Development and use HTML,CSS,Javascript(node,express) languages in web-dev, besidesI have little knowledge how to use database using mongdb.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Educations')">Educations</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Web Development</span><br> HTML, CSS, JS, NODE.js, Express.js, Mongodb</li>
+                            <li><span>Competetive Programming & DSA</span><br> C++, Python</li>
+                        </ul> 
+                    </div>
+                    <div class="tab-contents" id="Educations">
+                        <ul>
+                            <li><span>10th</span><br>from B J N Academy at 2017</li>
+                            <li><span>12th</span><br>from B J N Academy at 2019</li>
+                            <li><span>B.TECH</span><br>from IEM Calcutta ,will pass at 2024</li>
+                        </ul> 
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Coming soon</span></li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    
+<!-- ---service--- -->
+<div id="Services">
+    <div class="container">
+        <h1 class="Sub-title" style="font-weight:bolder">My Field of Interest</h1>
+        <div class="Services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>D S A</h2>
+                <p>
+                    Data Structer and Algorithms,
+                    Competetive Programming
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Back-End Development</h2>
+                <p>
+                    Creating Backend using Node,Express and connecting with Front-end,
+                    Connecting With Database using Mongodb
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Front-End Designing</h2>
+                <p>
+                    Basic Website designing
+                     by HTML,CSS,JS
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- projects -->
+<div id="Projects">
+    <div class="container">
+        <h1 class="Sub-title">My Projects</h1>
+        <div class="project-list">
+          <div class="project">
+            <img src="images/Your paragraph text.png" >
+            <div class="layer">
+               <h3>Personal Portfolio Website</h3>
+               <p>
+                Full details of my academic and proffetional career is in this website 
+               </p>
+               <a href="http://127.0.0.1:5500/" target="_blank">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+               </a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/Your paragraph text.png" >
+            <div class="layer">
+               <h3>MERN Stack Website</h3>
+               <p>
+                Full-Stack website Created by Dipayan
+               </p>
+               <a href="http://127.0.0.1:5500/" target="_blank">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+               </a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images//Your paragraph text.png" >
+            <div class="layer">
+               <h3>BMI Calculator</h3>
+               <p>
+                This android application helps to calculate the appropriate BMI of any person
+               </p>
+               <a href="http://127.0.0.1:5500/" target="_blank">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+               </a>
+            </div>
+          </div>
+        </div>  
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- ---contact--- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="Sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> deep16082001@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 9064092334</p>
+                <div class=".social-icons">
+                    <a href="https://www.linkedin.com/in/dipayan-mandal-175187228/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Deep642" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.facebook.com/chetek.pandey" target="_blank"><i class="fa-brands fa-meta"></i></a>
+                    <a href="https://twitter.com/Dipayan58783313" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/stallions_of_deep/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href=""class="btn btn_02">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name">
+                    <input type="Email" name="Email" placeholder="Your Email">
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn_02">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+          <p>Copyright © Deep. made this Portfolio<i class="fa-solid fa-user"></i></p>
+    </div>
+</div>
+</body>
+</html>
